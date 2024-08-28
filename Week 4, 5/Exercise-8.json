@@ -1,0 +1,29 @@
+{
+    "title": "The Great Gatsby",
+    "author": {
+        "id": 1
+    },
+    "isbn": "9780743273565",
+    "publicationYear": 1925
+}
+
+{
+    "title": "The Great Gatsby (Updated)",
+    "author": {
+        "id": 1
+    },
+    "isbn": "9780743273565",
+    "publicationYear": 1925
+}
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+}
+
+{
+    "firstName": "John (Updated)",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+}
