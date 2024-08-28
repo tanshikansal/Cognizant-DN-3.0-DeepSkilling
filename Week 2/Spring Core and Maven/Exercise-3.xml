@@ -1,0 +1,19 @@
+<!--pom.xml-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-aop</artifactId>
+</dependency>
+
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Enable AspectJ support -->
+    <aop:aspectj-autoproxy/>
+
+    <!-- Register the LoggingAspect -->
+    <bean id="loggingAspect" class="com.library.aspect.LoggingAspect"/>
+
+    <!-- Other bean definitions (if needed) -->
+</beans>

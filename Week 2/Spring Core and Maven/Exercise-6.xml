@@ -1,0 +1,16 @@
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define beans for BookService and BookRepository -->
+    <bean id="bookService" class="com.library.service.BookService">
+        <property name="bookRepository" ref="bookRepository"/>
+    </bean>
+
+    <bean id="bookRepository" class="com.library.repository.BookRepository"/>
+
+    <!-- Other bean definitions (if needed) -->
+    <context:component-scan base-package="com.library" />
+
+</beans>

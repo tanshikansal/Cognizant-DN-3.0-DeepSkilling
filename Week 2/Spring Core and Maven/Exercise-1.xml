@@ -1,0 +1,22 @@
+<!--pom.xml-->
+<dependencies>
+    <!-- Spring Core -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>5.3.10</version>
+    </dependency>
+    <!-- Other dependencies (if needed) -->
+</dependencies>
+
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define beans for BookService and BookRepository -->
+    <bean id="bookService" class="com.library.service.BookService"/>
+    <bean id="bookRepository" class="com.library.repository.BookRepository"/>
+
+    <!-- Other bean definitions (if needed) -->
+</beans>
